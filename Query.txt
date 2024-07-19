@@ -1,0 +1,28 @@
+To insert the data from Mongo to ELastic db:
+
+mutation{
+  insertToElastic
+}
+
+
+To apply filters on Elastic data(Filter can be applied on any field):
+
+query filterQuery{
+  filterQuery(filters: [{fieldName:"state" , fieldValue:"Pune"}] pageSize:10 pageNumber:1){
+    firstName
+    lastName
+    phoneNumber
+    state
+    docId
+  }
+}
+
+
+Query to get the data from mongo db:
+
+query allPanDetails{
+  allPanDetails{
+    firstName
+    lastName
+  }
+}

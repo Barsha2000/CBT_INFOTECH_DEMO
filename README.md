@@ -1,0 +1,1 @@
+Graphql queries to query on elastic db can be find in query.txt file.
